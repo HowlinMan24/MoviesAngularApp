@@ -1,0 +1,106 @@
+<h1>Movie Title</h1>
+<br>
+
+<div class="row">
+
+  <div class="col-md-6">
+    <iframe
+      width="540"
+      height="360"
+      src="https://www.youtube.com/embed/jotE3T-9720"
+      title="Building a Social Media App with ASP.NET: News Feeds, Friend Requests, Notifications, &amp; More"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="col-md-6">
+    <p class="lead">This is going ti be a place holder for the movie plot</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Stars</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Star Name 1</li>
+            <li class="list-group-item">Star Name 2</li>
+            <li class="list-group-item">Star Name 3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Directors</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Director Name 1</li>
+            <li class="list-group-item">Director Name 2</li>
+            <li class="list-group-item">Director Name 3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Genres</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Genres Name 1</li>
+            <li class="list-group-item">Genres Name 2</li>
+            <li class="list-group-item">Genres Name 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr>
+<br>
+<div class="row">
+  <h1>Actors</h1>
+  <br>
+  <div class="col-md-12 text-center">
+
+    <app-details-actors></app-details-actors>
+
+  </div>
+
+  <p class="text-center">
+    <a class="btn btn-warning" [routerLink]="['/details/actors/' + movieId]">View more</a>
+  </p>
+
+</div>
+
+<hr>
+<br>
+<div class="row">
+  <h1>Reviews</h1>
+  <br>
+  <div class="col-md-12 ">
+
+    <app-details-reviews></app-details-reviews>
+
+  </div>
+
+  <p class="text-center">
+    <a class="btn btn-warning" [routerLink]="['/details/reviews/'+movieId]">View more</a>
+  </p>
+
+</div>
+
+<hr>
+<br>
+<div class="row">
+  <h1>Similar movies</h1>
+  <br>
+  <div class="col-md-12">
+
+    <app-details-movies></app-details-movies>
+
+  </div>
+  <p class="text-center">
+    <a class="btn btn-warning" [routerLink]="['/details/movies/'+movieId]">View more</a>
+  </p>
+
+</div>
+
